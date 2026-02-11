@@ -1,15 +1,25 @@
-# expo-local-ios-ci-demo
+# ExpoLocalIOSDemo
 
-Expo iOS CI demo using local builds for building Expo apps on iOS
+Expo iOS simulator app built via **EAS Build `--local`** and uploaded to [AutoDevice](https://autodevice.io).
 
-## Overview
+## Build Method
 
-This repository is a demo project for [AutoDevice](https://autodevice.dev) CI integration.
+- **Platform**: iOS (simulator .app)
+- **Build**: EAS Build `--local` — builds run on the CI runner itself
+- **CI Runner**: `macos-15`
+- **Profile**: `simulator` (produces iOS simulator build)
+- **Requirements**: macOS + Xcode (available on `macos-15`)
 
-## Getting Started
+## Required Secrets
 
-Coming soon.
+| Secret | Description |
+|--------|-------------|
+| `EXPO_TOKEN` | Expo access token for EAS Build authentication |
+| `AUTODEVICE_API_KEY` | AutoDevice API key for uploading builds |
 
-## License
+## Local Development
 
-MIT
+```bash
+npm install
+npx expo start
+```
