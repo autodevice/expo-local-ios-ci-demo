@@ -27,6 +27,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "142c8c6d-831b-4fac-8bfc-2b80e0ecd4b4"
+      }
+    },
+    "owner": "bilalba"
   }
 }
